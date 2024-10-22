@@ -19,4 +19,16 @@ public class UserDaoImpl implements UserDao {
     public void save(Utilisateur utilisateur) {
         entityManager.persist(utilisateur);
     }
+
+    @Override
+    @Transactional
+    public Utilisateur findByEmail(String email) {
+        try {
+            return entityManager.createQuery("SELECT u FROM Utilisateur u WHERE u.email = :email", Utilisateur.class)
+                    .setParameter("email", email)
+                    .getSingleResult();
+        } catch (Exception e) {
+            return null;
+        }
+    }
 }

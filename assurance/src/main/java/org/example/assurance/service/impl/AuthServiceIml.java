@@ -18,4 +18,15 @@ public class AuthServiceIml implements AuthService {
 //        System.out.println("salma");
         userDao.save(utilisateur);
     }
+
+    @Override
+    public Utilisateur login(String email, String password) {
+        Utilisateur utilisateur = userDao.findByEmail(email);
+
+        if (utilisateur != null && utilisateur.getPassword().equals(password)) {
+            return utilisateur;
+        }
+
+        return null;
+    }
 }
