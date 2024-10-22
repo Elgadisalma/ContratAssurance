@@ -10,5 +10,9 @@
     <h2>Welcome, ${user.name}!</h2>
 </c:if>
 
+<form action="logout" method="post">
+    <button type="submit">LogOut</button>
+</form>
+
 </body>
 </html>
