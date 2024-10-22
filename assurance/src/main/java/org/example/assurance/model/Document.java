@@ -10,10 +10,12 @@ public class Document {
 
     private String path;
 
-    @Column(name = "contrat_id")
-    private Long contratId;
+    @ManyToOne
+    @JoinColumn(name = "contrat_id")
+    private Contrat contrat;
 
     public Document() {}
+
 
     public Long getId() {
         return id;
@@ -31,11 +33,11 @@ public class Document {
         this.path = path;
     }
 
-    public Long getContratId() {
-        return contratId;
+    public Contrat getContrat() {
+        return contrat;
     }
 
-    public void setContratId(Long contratId) {
-        this.contratId = contratId;
+    public void setContrat(Contrat contrat) {
+        this.contrat = contrat;
     }
 }

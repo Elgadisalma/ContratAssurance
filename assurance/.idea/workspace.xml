@@ -10,17 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e48811e8-d41c-4528-a5e5-605e46d2423b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Contrat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Devis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Document.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Habitation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/TypeAssurance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/TypeCouverture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/TypeLogement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/TypeVehicule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Utilisateur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/UtilisationVehicule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Automobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Automobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Contrat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Contrat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Devis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Habitation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Habitation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Sante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/model/Sante.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +71,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Tomcat Server.Tomcat 10.1.301.executor": "Run",
-    "git-widget-placeholder": "CA-7-Creation-des-tables",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ycode/OneDrive/Bureau/YouCodeProjects/Java/StaffMaster_2/staffMaster2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"

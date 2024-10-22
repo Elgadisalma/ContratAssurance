@@ -3,7 +3,7 @@ package org.example.assurance.model;
 import jakarta.persistence.*;
 
 @Entity
-public class Automobile extends Devis {
+public class Automobile extends Contrat {
     private int age;
 
     @Enumerated(EnumType.STRING)

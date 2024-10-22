@@ -3,7 +3,7 @@ package org.example.assurance.model;
 import jakarta.persistence.*;
 
 @Entity
-public class Sante extends Devis {
+public class Sante extends Contrat {
     private int age;
 
     private String etatSante;
