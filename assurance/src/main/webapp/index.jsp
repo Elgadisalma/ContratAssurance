@@ -7,7 +7,11 @@
 <body>
 <h1><%= "Hello World!" %>
 </h1>
+
+<h1>Bienvenue , voulez vous se connecter ou creer un compte
+</h1>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+<a href="auth/login">Se connecter</a>
+<a href="auth/register">S'enregistrer</a>
 </body>
 </html>
