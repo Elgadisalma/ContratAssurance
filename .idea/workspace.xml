@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f860083-e50b-4b83-bb47-c333b607416f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assurance/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assurance/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assurance/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assurance/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assurance/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assurance/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assurance/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assurance/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assurance/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assurance/src/main/java/org/example/assurance/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assurance/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assurance/src/main/webapp/index.jsp" beforeDir="false" />
-    </list>
+    <list default="true" id="9f860083-e50b-4b83-bb47-c333b607416f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,14 +25,29 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;CA-4-Configurer-Spring-dans-le-Projet&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ycode/OneDrive/Bureau/YouCodeProjects/Java/ContratAssurance&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "CA-18-Calcul-pour-generer-un-devis",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ycode/OneDrive/Bureau/YouCodeProjects/Java/ContratAssurance"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ContratAssurance" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ContratAssurance" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -64,6 +65,7 @@
       <updated>1729528080342</updated>
       <workItem from="1729528081438" duration="162000" />
       <workItem from="1729528261674" duration="249000" />
+      <workItem from="1729681543060" duration="11000" />
     </task>
     <servers />
   </component>
