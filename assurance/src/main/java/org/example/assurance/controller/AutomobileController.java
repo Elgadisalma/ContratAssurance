@@ -8,10 +8,8 @@ import org.example.assurance.model.Utilisateur;
 import org.example.assurance.service.AssuranceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -27,17 +25,33 @@ public class AutomobileController {
     }
 
     @PostMapping("submitAutomobile")
-    public ModelAndView addAutomobile(@ModelAttribute("automobile") Automobile automobile, HttpServletRequest request) {
+    public String addAutomobile(@ModelAttribute("automobile") Automobile automobile, HttpServletRequest request, Model model) {
         HttpSession session = request.getSession();
         Utilisateur utilisateur = (Utilisateur) session.getAttribute("user");
 
         if (utilisateur != null) {
             automobile.setUserId(utilisateur.getId());
             assuranceService.saveAutomobile(automobile);
-            return new ModelAndView("redirect:/home");
+
+            double montantDevis = assuranceService.devisAutomobile(automobile);
+
+            model.addAttribute("montantDevis", montantDevis);
+
+            return "formAutomobile";
         }
 
-        return new ModelAndView("redirect:/auth/login");
+        return "redirect:/auth/login";
+    }
+
+    @PostMapping("accepterAssurance")
+    public String accepterAssurance(@RequestParam("id") Long automobileId) {
+        Automobile automobile = assuranceService.findAutomobileById(automobileId);
+        if (automobile != null) {
+            automobile.setAccepte(true);
+            assuranceService.saveAutomobile(automobile);
+        }
+
+        return "redirect:/home";
     }
 
 }

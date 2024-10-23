@@ -10,12 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e48811e8-d41c-4528-a5e5-605e46d2423b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/SanteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/AssuranceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/AssuranceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/AutomobileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/AutomobileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/HabitationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/HabitationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/SanteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/SanteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/dao/AssuranceDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/dao/AssuranceDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/dao/impl/AssuranceDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/dao/impl/AssuranceDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/service/AssuranceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/service/AssuranceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/service/impl/AssuranceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/service/impl/AssuranceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/formAutomobile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/formAutomobile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/formHabitation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/formHabitation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/formSante.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/formSante.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +81,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 10.1.301.executor": "Run",
-    "git-widget-placeholder": "CA-12-Creer-un-devis",
+    "git-widget-placeholder": "CA-18-Calcul-pour-generer-un-devis",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ycode/OneDrive/Bureau/YouCodeProjects/Java/StaffMasterTest/staffMaster2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
