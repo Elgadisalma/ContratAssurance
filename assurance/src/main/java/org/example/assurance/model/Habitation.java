@@ -3,7 +3,7 @@ package org.example.assurance.model;
 import jakarta.persistence.*;
 
 @Entity
-public class Habitation extends Contrat {
+public class Habitation extends Assurance {
     private double valeurBien;
 
     @Enumerated(EnumType.STRING)

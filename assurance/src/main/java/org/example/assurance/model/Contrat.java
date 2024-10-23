@@ -17,22 +17,16 @@ public class Contrat {
     @Temporal(TemporalType.DATE)
     private Date dateFin;
 
-    @Enumerated(EnumType.STRING)
-    private TypeAssurance typeAssurance;
 
     private double montant;
 
-    @Column(name = "user_id")
-    private Long userId;
-
-    private boolean accepte;
+    @Column(name = "assurance_id")
+    private Long assuranceId;
 
     private boolean resilier;
 
     @OneToMany(mappedBy = "contrat", cascade = CascadeType.ALL)
     private List<Document> documents;
-
-    public Contrat() {}
 
 
     public Long getId() {
@@ -43,6 +37,7 @@ public class Contrat {
         this.id = id;
     }
 
+
     public Date getDateDebut() {
         return dateDebut;
     }
@@ -50,6 +45,7 @@ public class Contrat {
     public void setDateDebut(Date dateDebut) {
         this.dateDebut = dateDebut;
     }
+
 
     public Date getDateFin() {
         return dateFin;
@@ -59,36 +55,12 @@ public class Contrat {
         this.dateFin = dateFin;
     }
 
-    public TypeAssurance getTypeAssurance() {
-        return typeAssurance;
+    public Long getAssuranceId() {
+        return assuranceId;
     }
 
-    public void setTypeAssurance(TypeAssurance typeAssurance) {
-        this.typeAssurance = typeAssurance;
-    }
-
-    public double getMontant() {
-        return montant;
-    }
-
-    public void setMontant(double montant) {
-        this.montant = montant;
-    }
-
-    public Long getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
-
-    public boolean isAccepte() {
-        return accepte;
-    }
-
-    public void setAccepte(boolean accepte) {
-        this.accepte = accepte;
+    public void setAssuranceId(Long assuranceId) {
+        this.assuranceId = assuranceId;
     }
 
     public boolean isResilier() {
@@ -107,4 +79,13 @@ public class Contrat {
     public void setDocuments(List<Document> documents) {
         this.documents = documents;
     }
+
+    public double getMontant() {
+        return montant;
+    }
+
+    public void setMontant(double montant) {
+        this.montant = montant;
+    }
+
 }
