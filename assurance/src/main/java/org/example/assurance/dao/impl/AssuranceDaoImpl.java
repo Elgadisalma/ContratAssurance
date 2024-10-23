@@ -6,6 +6,7 @@ import jakarta.transaction.Transactional;
 import org.example.assurance.dao.AssuranceDao;
 import org.example.assurance.model.Automobile;
 import org.example.assurance.model.Habitation;
+import org.example.assurance.model.Sante;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -24,5 +25,10 @@ public class AssuranceDaoImpl implements AssuranceDao {
     @Override
     public void saveAutomobile(Automobile automobile) {
         entityManager.persist(automobile);
+    }
+
+    @Override
+    public void saveSante(Sante sante) {
+        entityManager.persist(sante);
     }
 }
