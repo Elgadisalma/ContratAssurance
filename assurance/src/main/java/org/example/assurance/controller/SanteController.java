@@ -19,7 +19,7 @@ public class SanteController {
     private AssuranceService assuranceService;
 
     @GetMapping()
-    public ModelAndView hs() {
+    public ModelAndView displayformSante() {
         return new ModelAndView("formSante");
     }
 

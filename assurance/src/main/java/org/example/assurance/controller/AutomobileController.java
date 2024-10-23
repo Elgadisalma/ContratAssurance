@@ -20,7 +20,7 @@ public class AutomobileController {
     private AssuranceService assuranceService;
 
     @GetMapping()
-    public ModelAndView hb() {
+    public ModelAndView diplayformAutomobile() {
         return new ModelAndView("formAutomobile");
     }
 

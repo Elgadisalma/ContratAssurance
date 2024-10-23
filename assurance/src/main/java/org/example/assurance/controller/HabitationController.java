@@ -20,7 +20,7 @@ public class HabitationController {
     private AssuranceService assuranceService;
 
     @GetMapping()
-    public ModelAndView hb() {
+    public ModelAndView displayformHabitation() {
         return new ModelAndView("formHabitation");
     }
 
