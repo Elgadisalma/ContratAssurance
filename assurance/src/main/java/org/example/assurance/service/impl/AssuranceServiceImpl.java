@@ -1,6 +1,7 @@
 package org.example.assurance.service.impl;
 
 import org.example.assurance.dao.AssuranceDao;
+import org.example.assurance.model.Automobile;
 import org.example.assurance.model.Habitation;
 import org.example.assurance.service.AssuranceService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,11 @@ public class AssuranceServiceImpl implements AssuranceService {
 
     @Override
     public void saveHabitation(Habitation habitation) {
-        assuranceDao.save(habitation);
+        assuranceDao.saveHabitation(habitation);
+    }
+
+    @Override
+    public void saveAutomobile(Automobile automobile) {
+        assuranceDao.saveAutomobile(automobile);
     }
 }

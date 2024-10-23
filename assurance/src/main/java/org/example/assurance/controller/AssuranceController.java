@@ -18,18 +18,13 @@ public class AssuranceController {
         return new ModelAndView("formSante");
     }
 
-    @GetMapping("automobile")
-    public ModelAndView ha() {
-        return new ModelAndView("formAutomobile");
-    }
-
 
     @PostMapping("/subscribe")
     public String assuranceChoix(@RequestParam("assuranceType") String assuranceType) {
         if ("sante".equals(assuranceType)) {
             return "redirect:/home/sante";
         } else if ("automobile".equals(assuranceType)) {
-            return "redirect:/home/automobile";
+            return "redirect:/automobile";
         } else if ("habitation".equals(assuranceType)) {
             return "redirect:/habitation";
         } else {
