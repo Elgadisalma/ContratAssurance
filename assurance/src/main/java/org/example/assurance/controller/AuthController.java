@@ -21,11 +21,6 @@ public class AuthController {
         return new ModelAndView("login");
     }
 
-    @GetMapping("/home")
-    public ModelAndView hh() {
-        return new ModelAndView("home");
-    }
-
     @GetMapping("/register")
     public ModelAndView showRegisterPage() {
         return new ModelAndView("register");
@@ -45,7 +40,7 @@ public class AuthController {
         if (utilisateur != null) {
             HttpSession session = request.getSession();
             session.setAttribute("user", utilisateur);
-            return "redirect:/auth/home";
+            return "redirect:/home";
         }
         return "redirect:/auth/login";
     }
