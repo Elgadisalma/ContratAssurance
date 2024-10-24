@@ -44,11 +44,15 @@ public class HabitationController {
     }
 
     @PostMapping("accepterAssurance")
-    public String accepterAssurance(@RequestParam("id") Long habitationId) {
+    public String accepterAssurance(@RequestParam("id") Long habitationId, Model model) {
         Habitation habitation = assuranceService.findHabitationById(habitationId);
         if (habitation != null) {
             habitation.setAccepte(true);
             assuranceService.saveHabitation(habitation);
+            model.addAttribute("assuranceId", habitation.getId());
+            model.addAttribute("montant", assuranceService.devisHabitation(habitation));
+
+            return "creerContrat";
         }
 
         return "redirect:/home";

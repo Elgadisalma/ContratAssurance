@@ -44,11 +44,15 @@ public class AutomobileController {
     }
 
     @PostMapping("accepterAssurance")
-    public String accepterAssurance(@RequestParam("id") Long automobileId) {
+    public String accepterAssurance(@RequestParam("id") Long automobileId, Model model) {
         Automobile automobile = assuranceService.findAutomobileById(automobileId);
         if (automobile != null) {
             automobile.setAccepte(true);
             assuranceService.saveAutomobile(automobile);
+            model.addAttribute("assuranceId", automobile.getId());
+            model.addAttribute("montant", assuranceService.devisAutomobile(automobile));
+
+            return "creerContrat";
         }
 
         return "redirect:/home";
