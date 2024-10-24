@@ -6,6 +6,7 @@
 <body>
 <h1>Éditer le Contrat</h1>
 <form action="${pageContext.request.contextPath}/contrat/update" method="post">
+    <input type="hidden" name="assuranceId" value="${contrat.assuranceId}">
     <input type="hidden" name="id" value="${contrat.id}">
     <div>
         <label for="dateDebut">Date de début :</label>

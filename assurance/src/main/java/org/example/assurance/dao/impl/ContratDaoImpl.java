@@ -33,7 +33,11 @@ public class ContratDaoImpl implements ContratDao {
     }
 
     @Override
-    public List<Contrat> findAll() {
-        return entityManager.createQuery("SELECT c FROM Contrat c", Contrat.class).getResultList();
+    public List<Contrat> findByUserId(Long userId) {
+        String query = "SELECT c FROM Contrat c JOIN Assurance a ON c.assuranceId = a.id WHERE a.userId = :userId";
+        return entityManager.createQuery(query, Contrat.class)
+                .setParameter("userId", userId)
+                .getResultList();
+
     }
 }

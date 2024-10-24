@@ -10,15 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e48811e8-d41c-4528-a5e5-605e46d2423b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editContrat.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/AssuranceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/AssuranceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/ContratController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/ContratController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/dao/ContratDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/dao/ContratDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/dao/impl/ContratDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/dao/impl/ContratDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/service/ContratService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/service/ContratService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/service/impl/ContratServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/service/impl/ContratServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +192,7 @@
       <workItem from="1729534116650" duration="311000" />
       <workItem from="1729534633094" duration="6351000" />
       <workItem from="1729777047054" duration="1358000" />
-      <workItem from="1729784650142" duration="6446000" />
+      <workItem from="1729784650142" duration="8650000" />
     </task>
     <servers />
   </component>

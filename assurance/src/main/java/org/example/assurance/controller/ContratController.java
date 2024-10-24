@@ -65,7 +65,8 @@ public class ContratController {
     }
 
     @PostMapping("/update")
-    public String updateContrat(@RequestParam("id") Long id,
+    public String updateContrat(@RequestParam("assuranceId") Long assuranceId,
+                                @RequestParam("id") Long id,
                                 @RequestParam("dateDebut") @DateTimeFormat(pattern = "yyyy-MM-dd") Date dateDebut,
                                 @RequestParam("dateFin") @DateTimeFormat(pattern = "yyyy-MM-dd") Date dateFin,
                                 @RequestParam("montant") double montant,
@@ -73,6 +74,7 @@ public class ContratController {
 
         Contrat contrat = new Contrat();
         contrat.setId(id);
+        contrat.setAssuranceId(assuranceId);
         contrat.setDateDebut(dateDebut);
         contrat.setDateFin(dateFin);
         contrat.setMontant(montant);

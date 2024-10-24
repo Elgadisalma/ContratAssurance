@@ -8,5 +8,5 @@ public interface ContratDao {
     void save(Contrat contrat);
     void edit(Contrat contrat);
     Contrat findById(Long id);
-    List<Contrat> findAll();
+    List<Contrat> findByUserId(Long userId);
 }

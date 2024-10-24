@@ -10,5 +10,5 @@ public interface ContratService {
     void saveDocument(Document document);
     Contrat findById(Long contratId);
     void editContrat(Contrat contrat);
-    List<Contrat> findAllContrats(); // Nouvelle méthode
+    List<Contrat> findContratsByUserId(Long userId);
 }

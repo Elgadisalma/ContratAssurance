@@ -41,7 +41,7 @@ public class ContratServiceImpl implements ContratService {
     }
 
     @Override
-    public List<Contrat> findAllContrats() {
-        return contratDao.findAll(); // Utilisez la méthode findAll du DAO
+    public List<Contrat> findContratsByUserId(Long userId) {
+        return contratDao.findByUserId(userId);
     }
 }
