@@ -52,8 +52,11 @@
                 <a href="${pageContext.request.contextPath}/contrat/edit/${contrat.id}">Modifier</a>
             </td>
             <td>
-                <a href="${pageContext.request.contextPath}/contrat/resilier?id=${contrat.id}" onclick="return confirm('Êtes-vous sûr de vouloir résilier ce contrat ?');">Resilier</a>
+                <form action="${pageContext.request.contextPath}/contrat/resilier/${contrat.id}" method="post">
+                    <button type="submit" ${contrat.resilier ? "disabled" : ""}>Resilier</button>
+                </form>
             </td>
+
         </tr>
     </c:forEach>
     </tbody>
