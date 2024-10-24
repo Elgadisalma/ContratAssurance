@@ -7,6 +7,8 @@ import org.example.assurance.dao.ContratDao;
 import org.example.assurance.model.Contrat;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 @Transactional
 public class ContratDaoImpl implements ContratDao {
@@ -18,5 +20,20 @@ public class ContratDaoImpl implements ContratDao {
     @Override
     public void save(Contrat contrat) {
         entityManager.persist(contrat);
+    }
+
+    @Override
+    public void edit(Contrat contrat) {
+        entityManager.merge(contrat);
+    }
+
+    @Override
+    public Contrat findById(Long id) {
+        return entityManager.find(Contrat.class, id);
+    }
+
+    @Override
+    public List<Contrat> findAll() {
+        return entityManager.createQuery("SELECT c FROM Contrat c", Contrat.class).getResultList();
     }
 }

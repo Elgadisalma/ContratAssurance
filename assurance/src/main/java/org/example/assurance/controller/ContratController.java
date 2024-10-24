@@ -6,6 +6,7 @@ import org.example.assurance.service.ContratService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -27,7 +28,6 @@ public class ContratController {
                                 @RequestParam("montant") double montant,
                                 @RequestParam(value = "documents", required = false) MultipartFile[] documents) {
 
-        // Créer un nouvel objet Contrat
         Contrat contrat = new Contrat();
         contrat.setAssuranceId(assuranceId);
         contrat.setDateDebut(dateDebut);
@@ -35,10 +35,8 @@ public class ContratController {
         contrat.setMontant(montant);
         contrat.setResilier(false);
 
-        // Sauvegarder le contrat
         contratService.saveContrat(contrat);
 
-        // Traiter les fichiers
         if (documents != null && documents.length > 0) {
             for (MultipartFile file : documents) {
                 if (!file.isEmpty()) {
@@ -56,7 +54,32 @@ public class ContratController {
             }
         }
 
-        return "redirect:/home"; // Rediriger après la soumission
+        return "redirect:/home";
+    }
+
+    @GetMapping("/edit/{id}")
+    public String showEditForm(@PathVariable("id") Long contratId, Model model) {
+        Contrat contrat = contratService.findById(contratId);
+        model.addAttribute("contrat", contrat);
+        return "editContrat";
+    }
+
+    @PostMapping("/update")
+    public String updateContrat(@RequestParam("id") Long id,
+                                @RequestParam("dateDebut") @DateTimeFormat(pattern = "yyyy-MM-dd") Date dateDebut,
+                                @RequestParam("dateFin") @DateTimeFormat(pattern = "yyyy-MM-dd") Date dateFin,
+                                @RequestParam("montant") double montant,
+                                @RequestParam(value = "documents", required = false) MultipartFile[] documents) {
+
+        Contrat contrat = new Contrat();
+        contrat.setId(id);
+        contrat.setDateDebut(dateDebut);
+        contrat.setDateFin(dateFin);
+        contrat.setMontant(montant);
+        contrat.setResilier(false);
+
+        contratService.editContrat(contrat);
+        return "redirect:/home";
     }
 
 

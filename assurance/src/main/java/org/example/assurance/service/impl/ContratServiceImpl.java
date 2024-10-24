@@ -8,6 +8,8 @@ import org.example.assurance.service.ContratService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ContratServiceImpl implements ContratService {
     @Autowired
@@ -25,5 +27,21 @@ public class ContratServiceImpl implements ContratService {
     @Override
     public void saveDocument(Document document) {
         documentDao.save(document);
+    }
+
+
+    @Override
+    public void editContrat(Contrat contrat) {
+        contratDao.edit(contrat);
+    }
+
+    @Override
+    public Contrat findById(Long id) {
+        return contratDao.findById(id);
+    }
+
+    @Override
+    public List<Contrat> findAllContrats() {
+        return contratDao.findAll(); // Utilisez la méthode findAll du DAO
     }
 }
