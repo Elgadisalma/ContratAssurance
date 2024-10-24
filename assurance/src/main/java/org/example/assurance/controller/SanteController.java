@@ -43,11 +43,15 @@ public class SanteController {
     }
 
     @PostMapping("accepterAssurance")
-    public String accepterAssurance(@RequestParam("id") Long santeId) {
+    public String accepterAssurance(@RequestParam("id") Long santeId, Model model) {
         Sante sante = assuranceService.findSanteById(santeId);
         if (sante != null) {
             sante.setAccepte(true);
             assuranceService.saveSante(sante);
+            model.addAttribute("assuranceId", sante.getId());
+            model.addAttribute("montant", assuranceService.devisSante(sante));
+
+            return "creerContrat";
         }
 
         return "redirect:/home";
