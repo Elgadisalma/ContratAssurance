@@ -64,6 +64,17 @@ public class ContratController {
         return "editContrat";
     }
 
+    @PostMapping("/resilier/{id}")
+    public String resilierContrat(@PathVariable("id") Long contratId) {
+        Contrat contrat = contratService.findById(contratId);
+        if (contrat != null && !contrat.isResilier()) {
+            contrat.setResilier(true);
+            contratService.editContrat(contrat);
+        }
+        return "redirect:/home";
+    }
+
+
     @PostMapping("/update")
     public String updateContrat(@RequestParam("assuranceId") Long assuranceId,
                                 @RequestParam("id") Long id,
