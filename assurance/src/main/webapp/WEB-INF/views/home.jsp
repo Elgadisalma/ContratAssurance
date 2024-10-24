@@ -2,7 +2,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html>
 <head>
-    <title>User Info</title>
+    <title>Home</title>
 </head>
 <body>
 
@@ -14,11 +14,11 @@
     <button type="submit">LogOut</button>
 </form>
 
-<h2>Voulez-vous se souscrire a une assurance ?</h2>
-<h2>Laquel voulez-vous</h2>
+<h2>Voulez-vous souscrire à une assurance ?</h2>
+<h2>Laquelle voulez-vous ?</h2>
 
 <form action="home/subscribe" method="post">
-    <label for="assuranceType">Choisissez le type d'assurance:</label>
+    <label for="assuranceType">Choisissez le type d'assurance :</label>
     <select name="assuranceType" id="assuranceType">
         <option value="">--Selectionnez--</option>
         <option value="sante">Assurance Sante</option>
@@ -26,9 +26,38 @@
         <option value="habitation">Assurance Habitation</option>
     </select>
 
-
     <button type="submit">Soumettre</button>
 </form>
+
+<h2>Liste des Contrats</h2>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Date Debut</th>
+        <th>Date Fin</th>
+        <th>Montant</th>
+        <th>Resilie</th>
+    </tr>
+    </thead>
+    <tbody>
+    <c:forEach var="contrat" items="${contrats}">
+        <tr>
+            <td>${contrat.id}</td>
+            <td>${contrat.dateDebut}</td>
+            <td>${contrat.dateFin}</td>
+            <td>${contrat.montant}</td>
+            <td>${contrat.resilier ? 'Oui' : 'Non'}</td>
+            <td>
+                <a href="${pageContext.request.contextPath}/contrat/edit/${contrat.id}">Modifier</a>
+            </td>
+            <td>
+                <a href="${pageContext.request.contextPath}/contrat/resilier?id=${contrat.id}" onclick="return confirm('Êtes-vous sûr de vouloir résilier ce contrat ?');">Resilier</a>
+            </td>
+        </tr>
+    </c:forEach>
+    </tbody>
+</table>
 
 </body>
 </html>

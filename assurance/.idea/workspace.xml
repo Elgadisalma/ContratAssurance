@@ -11,11 +11,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e48811e8-d41c-4528-a5e5-605e46d2423b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/AutomobileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/AutomobileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/HabitationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/HabitationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/SanteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/SanteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/AssuranceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/AssuranceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/dao/ContratDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/dao/ContratDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/dao/impl/ContratDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/dao/impl/ContratDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/service/ContratService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/service/ContratService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/service/impl/ContratServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/service/impl/ContratServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -67,19 +67,19 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.Tomcat 10.1.301.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;CA-16-Se-soucrire-a-la-contrat&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ycode/OneDrive/Bureau/YouCodeProjects/Java/StaffMasterTest/staffMaster2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 10.1.301.executor": "Run",
+    "git-widget-placeholder": "CA-15-Modifier-une-contrat",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ycode/OneDrive/Bureau/YouCodeProjects/Java/StaffMasterTest/staffMaster2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ycode\OneDrive\Bureau\YouCodeProjects\Java\ContratAssurance\assurance\src\main\resources\META-INF" />
@@ -192,7 +192,7 @@
       <workItem from="1729534116650" duration="311000" />
       <workItem from="1729534633094" duration="6351000" />
       <workItem from="1729777047054" duration="1358000" />
-      <workItem from="1729784650142" duration="3889000" />
+      <workItem from="1729784650142" duration="8650000" />
     </task>
     <servers />
   </component>
@@ -208,18 +208,9 @@
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/assurance/controller/AssuranceController.java</url>
-          <line>11</line>
-          <properties class="org.example.assurance.controller.AssuranceController" method="hh">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/assurance/controller/ContratController.java</url>
-          <line>63</line>
+          <line>86</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
