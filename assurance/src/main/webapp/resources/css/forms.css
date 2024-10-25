@@ -1,26 +1,23 @@
-/* Style général pour le body pour centrer le formulaire */
 .hh {
-    display: flex; /* Utiliser flexbox */
-    justify-content: center; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
-    height: 100vh; /* Utiliser la hauteur de la fenêtre */
-    margin: 0; /* Éliminer la marge par défaut */
-    font-family: Arial, sans-serif; /* Police par défaut */
-    background-color: #f0f0f0; /* Couleur de fond pour le corps */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
-/* Style général pour les formulaires */
 form {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    width: 100%; /* Assurer que le formulaire prend 100% de la largeur disponible */
-    margin: 20px; /* Marge autour du formulaire */
+    width: 100%;
+    margin: 20px;
 }
 
-/* Titre du formulaire */
 h1, h2 {
     text-align: center;
     color: #333;
@@ -28,13 +25,11 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
-/* Style pour les conteneurs de champs */
 .form-group,
 div {
     margin-bottom: 15px;
 }
 
-/* Style des étiquettes */
 form label {
     display: block;
     font-weight: bold;
@@ -42,7 +37,6 @@ form label {
     color: #444;
 }
 
-/* Style des champs de saisie */
 form input[type="text"],
 form input[type="number"],
 form input[type="date"],
@@ -59,20 +53,17 @@ form textarea {
     margin-bottom: 10px;
 }
 
-/* Style spécifique pour les champs de texte */
 form textarea {
     resize: vertical;
     min-height: 100px;
 }
 
-/* Style pour les cases à cocher */
 form input[type="checkbox"] {
     margin-right: 10px;
 }
 
-/* Bouton de soumission */
 form button[type="submit"] {
-    background-color: #4682B4; /* Couleur bleu acier */
+    background-color: #4682B4;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -84,10 +75,9 @@ form button[type="submit"] {
 }
 
 form button[type="submit"]:hover {
-    background-color: #3b6a90; /* Couleur plus foncée pour le survol */
+    background-color: #3b6a90;
 }
 
-/* Pop-up */
 .popup {
     display: none;
     position: fixed;
@@ -115,24 +105,22 @@ form button[type="submit"]:hover {
     z-index: 999;
 }
 
-/* Style des boutons dans le pop-up */
 .popup button {
     margin-top: 10px;
     padding: 10px;
     width: 100%;
     border: none;
     border-radius: 5px;
-    background-color: #4682B4; /* Couleur bleu acier */
+    background-color: #4682B4;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .popup button:hover {
-    background-color: #3b6a90; /* Couleur plus foncée pour le survol */
+    background-color: #3b6a90;
 }
 
-/* Responsive design */
 @media (max-width: 600px) {
     form {
         padding: 15px;

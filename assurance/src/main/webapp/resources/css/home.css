@@ -1,6 +1,3 @@
-/* home.css */
-
-/* Style général du body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -8,23 +5,18 @@ body {
     padding: 20px;
 }
 
-/* Alignement des éléments de l'en-tête */
 .header {
     display: flex;
-    justify-content: space-between; /* Espace entre les éléments */
-    align-items: center; /* Alignement vertical */
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Titre principal */
 h2 {
-    color: #4682B4; /* Couleur bleu acier */
+    color: #4682B4;
 }
 
-
-
-/* Style des boutons */
 button {
-    background-color: #4682B4; /* Couleur bleu acier */
+    background-color: #4682B4;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -34,10 +26,9 @@ button {
 }
 
 button:hover {
-    background-color: #5a9bc0; /* Une teinte plus claire de bleu */
+    background-color: #5a9bc0;
 }
 
-/* Style du tableau */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -55,7 +46,6 @@ th {
     color: white;
 }
 
-/* Style pour les liens */
 a {
     color: #4682B4;
     text-decoration: none;
@@ -65,7 +55,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Responsive design */
 @media (max-width: 600px) {
     form {
         width: 90%;
