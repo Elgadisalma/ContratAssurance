@@ -20,8 +20,15 @@ public class AutomobileController {
     private AssuranceService assuranceService;
 
     @GetMapping()
-    public ModelAndView diplayformAutomobile() {
-        return new ModelAndView("formAutomobile");
+    public ModelAndView diplayformAutomobile(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        Utilisateur utilisateur = (Utilisateur) session.getAttribute("user");
+
+        if (utilisateur != null) {
+            return new ModelAndView("formAutomobile");
+        }
+
+        return new ModelAndView("login");
     }
 
     @PostMapping("submitAutomobile")

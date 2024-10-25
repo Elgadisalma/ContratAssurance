@@ -1,7 +1,10 @@
 package org.example.assurance.controller;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import org.example.assurance.model.Contrat;
 import org.example.assurance.model.Document;
+import org.example.assurance.model.Utilisateur;
 import org.example.assurance.service.ContratService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -58,10 +61,16 @@ public class ContratController {
     }
 
     @GetMapping("/edit/{id}")
-    public String showEditForm(@PathVariable("id") Long contratId, Model model) {
-        Contrat contrat = contratService.findById(contratId);
-        model.addAttribute("contrat", contrat);
-        return "editContrat";
+    public String showEditForm(@PathVariable("id") Long contratId, Model model, HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        Utilisateur utilisateur = (Utilisateur) session.getAttribute("user");
+
+        if (utilisateur != null) {
+            Contrat contrat = contratService.findById(contratId);
+            model.addAttribute("contrat", contrat);
+            return "editContrat";
+        }
+        return "redirect:/auth/login";
     }
 
     @PostMapping("/resilier/{id}")

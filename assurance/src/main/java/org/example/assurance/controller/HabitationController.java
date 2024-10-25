@@ -20,8 +20,14 @@ public class HabitationController {
     private AssuranceService assuranceService;
 
     @GetMapping()
-    public ModelAndView displayformHabitation() {
-        return new ModelAndView("formHabitation");
+    public ModelAndView displayformHabitation(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        Utilisateur utilisateur = (Utilisateur) session.getAttribute("user");
+
+        if (utilisateur != null) {
+            return new ModelAndView("formHabitation");
+        }
+        return new ModelAndView("login");
     }
 
     @PostMapping("submitHabitation")

@@ -19,8 +19,14 @@ public class SanteController {
     private AssuranceService assuranceService;
 
     @GetMapping()
-    public ModelAndView displayformSante() {
-        return new ModelAndView("formSante");
+    public ModelAndView displayformSante(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        Utilisateur utilisateur = (Utilisateur) session.getAttribute("user");
+
+        if (utilisateur != null) {
+            return new ModelAndView("formSante");
+        }
+        return new ModelAndView("login");
     }
 
     @PostMapping("submitSante")
