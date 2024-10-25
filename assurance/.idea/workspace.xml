@@ -10,10 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e48811e8-d41c-4528-a5e5-605e46d2423b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/AutomobileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/AutomobileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/ContratController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/ContratController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/HabitationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/HabitationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/SanteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/assurance/controller/SanteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +68,8 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
     "JUnit.AssuranceServiceImplTest.executor": "Run",
+    "JUnit.AuthServiceImplTest.executor": "Run",
+    "JUnit.ContratServiceImplTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 10.1.301.executor": "Run",
