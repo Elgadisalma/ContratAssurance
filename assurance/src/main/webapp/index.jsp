@@ -2,16 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Bienvenue</title>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/styles.css">
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
+<div class="landing">
+    <h1>Bienvenue !</h1>
+    <h2>Voulez-vous vous connecter ou créer un compte ?</h2>
+    <a href="auth/login">Se connecter</a>
+    <a href="auth/register" style="margin-left: 20px;">S'enregistrer</a>
 
-<h1>Bienvenue , voulez vous se connecter ou creer un compte
-</h1>
-<br/>
-<a href="auth/login">Se connecter</a>
-<a href="auth/register">S'enregistrer</a>
+    <blockquote>
+        "La meilleure façon de prédire l'avenir est de l'inventer." – Alan Kay
+    </blockquote>
+</div>
 </body>
 </html>

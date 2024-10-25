@@ -2,8 +2,13 @@
 <html>
 <head>
     <title>Title</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/forms.css">
 </head>
 <body>
+<h1>Se Souscrire </h1>
+
+<div class="hh">
+
 <form action="${pageContext.request.contextPath}/contrat/submitContrat" method="post" >
     <input type="hidden" name="assuranceId" value="${assuranceId}">
     <input type="hidden" name="montant" value="${montant}">
@@ -26,6 +31,8 @@
     <div>
         <button type="submit">Créer le Contrat</button>
     </div>
+</div>
+
 </form>
 </body>
 </html>

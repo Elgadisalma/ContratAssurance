@@ -29,6 +29,9 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
+
+
     <!-- Configuration de l'EntityManagerFactory pour JPA -->
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="persistenceUnitName" value="default"/>
