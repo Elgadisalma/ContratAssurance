@@ -10,7 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e48811e8-d41c-4528-a5e5-605e46d2423b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/forms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assurance/service/impl/AssuranceServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assurance/service/impl/AuthServiceImlTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assurance/service/impl/ContratServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,7 @@
         <option value="Interface" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -66,10 +70,13 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
+    "JUnit.AssuranceServiceImplTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 10.1.301.executor": "Run",
-    "git-widget-placeholder": "CA-21-Ajouter-le-css-pour-les-pages",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "CA-23-Tester-les-fonctionalites",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/ycode/OneDrive/Bureau/YouCodeProjects/Java/StaffMasterTest/staffMaster2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
@@ -82,8 +89,29 @@
       <recent name="C:\Users\ycode\OneDrive\Bureau\YouCodeProjects\Java\ContratAssurance\assurance\src\main\webapp" />
       <recent name="C:\Users\ycode\OneDrive\Bureau\YouCodeProjects\Java\ContratAssurance\assurance\src\main\resources\META-INF" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.assurance.service.impl" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AssuranceServiceImplTest">
+    <configuration name="AssuranceServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assurance" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.assurance.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.assurance.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="org.example.assurance.service.impl.AssuranceServiceImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 10.1.301" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.301" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -171,6 +199,11 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AssuranceServiceImplTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
