@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Formulaire de Souscription - Assurance Automobile</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/forms.css">
     <style>
         .popup {
             display: none;
@@ -28,6 +29,7 @@
 </head>
 <body>
 <h2>Formulaire de Souscription - Assurance Automobile</h2>
+<div class="hh">
 
 <form action="automobile/submitAutomobile" method="post">
     <input type="hidden" name="typeAssurance" value="AUTOMOBILE">
@@ -57,7 +59,7 @@
 
     <div>
         <label for="historique">Historique:</label>
-        <input id="historique" name="historique" placeholder="Décrivez l'historique du véhicule" required>
+        <input id="historique" type="text" name="historique" placeholder="Décrivez l'historique du véhicule" required>
     </div>
 
     <div>
@@ -76,6 +78,7 @@
         <button type="submit">Accepter l'assurance</button>
     </form>
     <button onclick="fermerPopup()">Annuler</button>
+</div>
 </div>
 
 <script>

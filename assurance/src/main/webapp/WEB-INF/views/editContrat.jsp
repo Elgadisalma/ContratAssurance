@@ -2,9 +2,11 @@
 <html>
 <head>
     <title>Éditer le Contrat</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/forms.css">
 </head>
 <body>
 <h1>Éditer le Contrat</h1>
+<div class="hh">
 <form action="${pageContext.request.contextPath}/contrat/update" method="post">
     <input type="hidden" name="assuranceId" value="${contrat.assuranceId}">
     <input type="hidden" name="id" value="${contrat.id}">
@@ -22,6 +24,8 @@
     <div>
         <button type="submit">Mettre à jour</button>
     </div>
+</div>
+
 </form>
 </body>
 </html>

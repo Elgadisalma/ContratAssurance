@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Title</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/forms.css">
     <style>
         .popup {
             display: none;
@@ -29,6 +30,7 @@
 <body>
 <h2>Formulaire de Souscription - Assurance Habitation</h2>
 
+<div class="hh">
 <form action="habitation/submitHabitation" method="post">
 
     <input type="hidden" name="typeAssurance" value="HABITATION">
@@ -64,7 +66,7 @@
     </form>
     <button onclick="fermerPopup()">Annuler</button>
 </div>
-
+</div>
 <script>
     window.onload = function() {
         var montantDevis = "${montantDevis}";

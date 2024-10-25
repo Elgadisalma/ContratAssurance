@@ -24,13 +24,15 @@ public class AssuranceController {
     public String listerMesContrats(Model model, HttpServletRequest request) {
         HttpSession session = request.getSession();
         Utilisateur utilisateur = (Utilisateur) session.getAttribute("user");
-        Long userId = utilisateur.getId();
 
-
-        System.out.println(userId);
-        List<Contrat> contrats = contratService.findContratsByUserId(userId);
-        model.addAttribute("contrats", contrats);
-        return "home";
+        if (utilisateur != null) {
+            Long userId = utilisateur.getId();
+            System.out.println(userId);
+            List<Contrat> contrats = contratService.findContratsByUserId(userId);
+            model.addAttribute("contrats", contrats);
+            return "home";
+        }
+        return "redirect:/auth/login";
     }
 
 

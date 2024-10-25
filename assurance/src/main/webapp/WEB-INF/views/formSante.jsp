@@ -25,49 +25,51 @@
             z-index: 999;
         }
     </style>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/forms.css">
 </head>
 <body>
 <h1>Formulaire de Souscription - Assurance Sante</h1>
+<div class="hh">
+    <form action="sante/submitSante" method="post">
 
-<form action="sante/submitSante" method="post">
+        <input type="hidden" name="typeAssurance" value="SANTE">
 
-    <input type="hidden" name="typeAssurance" value="SANTE">
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0" required>
+        </div>
 
-    <div>
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" min="0" required>
-    </div>
+        <div>
+            <label for="etatSante">Etat de Sante:</label>
+            <input type="text" id="etatSante" name="etatSante" placeholder="Decrivez votre etat de sante" required>
+        </div>
 
-    <div>
-        <label for="etatSante">Etat de Sante:</label>
-        <input id="etatSante" name="etatSante" placeholder="Decrivez votre etat de sante" required>
-    </div>
+        <div>
+            <label for="typeCouverture">Type de Couverture:</label>
+            <select id="typeCouverture" name="typeCouverture" required>
+                <option value="">--Selectionnez--</option>
+                <option value="BASIC">Basic</option>
+                <option value="PREMIUM">Premium</option>
+            </select>
+        </div>
 
-    <div>
-        <label for="typeCouverture">Type de Couverture:</label>
-        <select id="typeCouverture" name="typeCouverture" required>
-            <option value="">--Selectionnez--</option>
-            <option value="BASIC">Basic</option>
-            <option value="PREMIUM">Premium</option>
-        </select>
-    </div>
-
-    <div>
-        <button type="submit">Soumettre</button>
-    </div>
-</form>
-
-<!-- Pop-up pour afficher le devis -->
-<div class="popup-overlay" id="popup-overlay"></div>
-<div class="popup" id="popup">
-    <h3>Montant du Devis</h3>
-    <p>Le montant de votre devis est : <span id="montantDevis">${montantDevis} MAD/MOIS</span></p>
-    <form action="accepterAssurance" method="post">
-        <input type="hidden" name="montantDevis" value="${montantDevis}">
-        <input type="hidden" name="id" value="${sante.id}">
-        <button type="submit">Accepter l'assurance</button>
+        <div>
+            <button type="submit">Soumettre</button>
+        </div>
     </form>
-    <button onclick="fermerPopup()">Annuler</button>
+
+    <!-- Pop-up pour afficher le devis -->
+    <div class="popup-overlay" id="popup-overlay"></div>
+    <div class="popup" id="popup">
+        <h3>Montant du Devis</h3>
+        <p>Le montant de votre devis est : <span id="montantDevis">${montantDevis} MAD/MOIS</span></p>
+        <form action="accepterAssurance" method="post">
+            <input type="hidden" name="montantDevis" value="${montantDevis}">
+            <input type="hidden" name="id" value="${sante.id}">
+            <button type="submit">Accepter l'assurance</button>
+        </form>
+        <button onclick="fermerPopup()">Annuler</button>
+    </div>
 </div>
 
 <script>
